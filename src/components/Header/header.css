@@ -1,0 +1,18 @@
+.header {
+  margin: 15px 0 10px;
+}
+.header h1 {
+  font-weight: 700;
+}
+.header .light {
+  font-weight: 200;
+}
+
+@media screen and (max-width: 978px) {
+  .header {
+    margin: 0;
+  }
+  .header h1 {
+    font-size: 26px;
+  }
+}

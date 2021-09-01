@@ -1,0 +1,21 @@
+.forecast {
+  display: flex;
+  gap: 30px;
+}
+
+.forecast-today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast-upcoming {
+  display: flex;
+}
+
+@media screen and (max-width: 978px) {
+  .forecast {
+    flex-direction: column;
+    gap: 0;
+  }
+}
