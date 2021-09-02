@@ -51,4 +51,7 @@ small {
     justify-content: space-between;
     padding: 12px 18px;
   }
+  .current img {
+    width: 50px;
+  }
 }

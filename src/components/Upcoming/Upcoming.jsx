@@ -10,10 +10,12 @@ export default function Upcoming({ data }) {
         {data.map((singleDay) => (
           <div className="single-day" key={singleDay.weekday}>
             <div className="desc">
-              <p>{singleDay.weekday}</p>
+              <p>{singleDay.date}</p>
+              <small>{singleDay.weekday}</small>
               <p>{singleDay.temperature} °C</p>
             </div>
             <img src={singleDay.imgUrl} alt="" />
+            <small>{singleDay.description}</small>
           </div>
         ))}
       </div>

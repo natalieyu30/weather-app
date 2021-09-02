@@ -22,12 +22,22 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.single-day .desc {
+  text-align: center;
+  /* margin: 0 auto; */
+}
+small {
+  display: block;
+  color: #aaa;
+}
 .single-day p {
   font-size: 14px;
 }
 
 .single-day img {
-  width: 40px;
+  margin: 5px 0;
+  width: 35px;
 }
 
 @media screen and (max-width: 978px) {
