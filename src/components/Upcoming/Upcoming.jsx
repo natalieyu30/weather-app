@@ -9,13 +9,19 @@ export default function Upcoming({ data }) {
       <div className="upcoming-item">
         {data.map((singleDay) => (
           <div className="single-day" key={singleDay.weekday}>
-            <div className="desc">
+            {/* <div className="desc"> */}
+            <div className="date">
               <p>{singleDay.date}</p>
               <small>{singleDay.weekday}</small>
+            </div>
+            <div className="temp">
               <p>{singleDay.temperature} °C</p>
             </div>
-            <img src={singleDay.imgUrl} alt="" />
-            <small>{singleDay.description}</small>
+            <div className="pic">
+              <img src={singleDay.imgUrl} alt="" />
+              <small>{singleDay.description}</small>
+            </div>
+            {/* </div> */}
           </div>
         ))}
       </div>

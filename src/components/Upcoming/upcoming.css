@@ -5,6 +5,10 @@
   align-items: flex-end;
   padding: 0 10px 20px 0;
 }
+.upcoming h4 {
+  margin: 0;
+  padding-bottom: 20px;
+}
 .upcoming-item {
   display: flex;
   align-items: center;
@@ -13,8 +17,9 @@
   color: var(--main-text-color);
 }
 .single-day {
-  height: 80%;
+  height: 100%;
   width: 80px;
+  padding: 6px 0 12px;
   background-color: var(--bg-color);
   border-radius: var(--secondary-border-radius);
   display: flex;
@@ -23,9 +28,11 @@
   justify-content: space-around;
 }
 
-.single-day .desc {
+.single-day .date,
+.single-day .temp,
+.single-day .pic {
   text-align: center;
-  /* margin: 0 auto; */
+  padding: 0;
 }
 small {
   display: block;
@@ -34,15 +41,18 @@ small {
 .single-day p {
   font-size: 14px;
 }
-
+.temp p {
+  font-size: 16px;
+  font-weight: 600;
+}
 .single-day img {
   margin: 5px 0;
   width: 35px;
 }
 
 @media screen and (max-width: 978px) {
-  h4 {
-    margin: 20px 0 10px;
+  .upcoming h4 {
+    margin: 20px 0 0;
   }
   .upcoming-item {
     margin: 15px 0;
@@ -54,8 +64,9 @@ small {
 }
 
 @media screen and (max-width: 500px) {
-  h4 {
+  .upcoming h4 {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
   .upcoming {
     width: 100%;

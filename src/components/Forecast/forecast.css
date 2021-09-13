@@ -1,6 +1,8 @@
 .forecast {
   display: flex;
   gap: 30px;
+  margin: 20px;
+  flex-direction: column;
 }
 
 .forecast-today {
@@ -15,7 +17,7 @@
 
 @media screen and (max-width: 978px) {
   .forecast {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 0;
   }
 }
